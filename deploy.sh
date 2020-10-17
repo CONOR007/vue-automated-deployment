@@ -13,4 +13,4 @@ rm -rf /home/www/*
 mv /tmp/vue-automated-deployment/dist/* /home/www
 
 # 删除 clone 的代码
-rm -rf /tmp/vue-deploy-demo
+rm -rf /tmp/vue-automated-deployment
