@@ -7,6 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
+    # 乌班图的系统
     runs-on: ubuntu-latest
     steps:
     # 部署到服务器
@@ -17,9 +18,10 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
+        debug: true
         script: |
           cd /tmp
           git clone https://github.com/CONOR007/vue-automated-deployment.git
           cd /tmp/vue-automated-deployment
-          chmod =x ./deploy.sh
+          chmod +x ./deploy.sh
           ./deploy.sh
