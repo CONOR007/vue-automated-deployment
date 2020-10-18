@@ -1,5 +1,5 @@
 {
-  "name": "Vue测试环境自动化部署",
+  "name": "vue-automated-deployment",
   "version": "0.1.0",
   "private": true,
   "scripts": {
