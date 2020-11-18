@@ -2,8 +2,8 @@ name: Publish And Deploy Demo
 on:
   # 模拟发布分支 push的时候就去自动部署
   push:
-    # branches:
-    #   - master
+    branches:
+      - master
     tags:
       - 'v*'
 
